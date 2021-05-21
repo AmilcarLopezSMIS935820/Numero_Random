@@ -27,7 +27,7 @@ class Random : AppCompatActivity() {
         resultado.text= rnds.toString()
 
         a++
-        Toast.makeText(this, "Lleva: " + a + " intentos", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Lleva: " + a + " intentos", Toast.LENGTH_LONG).show()
         if (rnds == cm){
             val i = Intent(this, Ganador::class.java)
             startActivity(i)
