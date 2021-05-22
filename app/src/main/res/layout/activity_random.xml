@@ -7,34 +7,76 @@
     android:background="@color/white"
     tools:context=".Random">
 
-
-    <TextView
-        android:id="@+id/resultado"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45sp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:background="#C9F6F8"
-        android:gravity="center_vertical"
-        android:text="Clic en boton"
-        android:textAlignment="center"
-        android:textColor="#062259"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlCompat" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="15dp"
+            android:background="#C9F6F8"
+            android:gravity="center_vertical"
+            android:hint=" 0 "
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#062259"
+            android:textColorHint="#8EADEC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/resultado2"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="15dp"
+            android:background="#C9F6F8"
+            android:gravity="center_vertical"
+            android:hint=" 0 "
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#062259"
+            android:textColorHint="#8EADEC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/resultado3"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="15dp"
+            android:background="#C9F6F8"
+            android:gravity="center_vertical"
+            android:hint=" 0 "
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#062259"
+            android:textColorHint="#8EADEC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btngenerar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="200dp"
-        android:background="@drawable/ovalo"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="180dp"
+        android:background="#EA2E21"
         android:text="Generar"
         android:textColor="@color/white"
         android:textSize="17sp"
@@ -43,5 +85,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="50dp"
+        android:text="¡Prueba tu suerte!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#096BBA"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

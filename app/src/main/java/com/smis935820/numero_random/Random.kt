@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_random.*
+import java.util.Random
 class Random : AppCompatActivity() {
     var a = 0
     val cm = 7
@@ -23,15 +24,23 @@ class Random : AppCompatActivity() {
     }
 
     private fun generar(){
-        val rnds = (0..10).random()
-        resultado.text= rnds.toString()
+        val rt1:Int = Random().nextInt(10)
+        val rt2:Int = Random().nextInt(10)
+        val rt3:Int = Random().nextInt(10)
+        resultado.text = rt1.toString()
+        resultado2.text = rt2.toString()
+        resultado3.text = rt3.toString()
 
         a++
         Toast.makeText(this, "Lleva: " + a + " intentos", Toast.LENGTH_LONG).show()
-        if (rnds == cm){
-            val i = Intent(this, Ganador::class.java)
-            startActivity(i)
-            finish()
+        if (rt1 == cm){
+            if(rt2 == cm){
+                if(rt3 == cm){
+                    val i = Intent(this, Ganador::class.java)
+                    startActivity(i)
+                    finish()
+                }
+            }
         }
     }
 }
